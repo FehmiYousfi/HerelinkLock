@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout style="@style/Layout.Horizontal.PrefLine">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ds_account_id" style="@style/Text.SettingsPrompt" />
+            <EditText android:id="@id/ds_account_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="180.0dip" android:hint="@string/account_id" android:inputType="textNoSuggestions" android:imeOptions="actionNext" />
+        </LinearLayout>
+        <LinearLayout style="@style/Layout.Horizontal.PrefLine">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ds_account_token" style="@style/Text.SettingsPrompt" />
+            <EditText android:id="@id/ds_account_token" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="180.0dip" android:hint="@string/token" android:inputType="textNoSuggestions" android:imeOptions="actionNext" />
+        </LinearLayout>
+        <LinearLayout style="@style/Layout.Horizontal.PrefLine">
+            <CheckBox android:id="@id/chk_agree" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="@string/ds_terms" android:layout_marginStart="8.0dip" />
+        </LinearLayout>
+        <LinearLayout style="@style/Layout.Horizontal.PrefLine">
+            <CheckBox android:id="@id/chk_agree2" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="@string/ds_terms2" android:layout_marginStart="8.0dip" />
+        </LinearLayout>
+        <LinearLayout style="@style/Layout.Horizontal.PrefLine">
+            <Button android:id="@id/btn_connect" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="@string/connect" android:layout_marginStart="8.0dip" />
+            <Button android:id="@id/btn_disconnect" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="@string/disconnect" android:layout_marginStart="8.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

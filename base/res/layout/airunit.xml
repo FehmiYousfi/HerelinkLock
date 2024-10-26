@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TableLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TableRow android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <Button android:id="@id/but_downloadfw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Download Air Firmware" android:layout_weight="1.0" />
+                <Button android:id="@id/but_sendupdate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Transfer to AirUnit" android:layout_weight="1.0" />
+                <Button android:id="@id/but_doupgrade" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Update Airunit" android:layout_weight="1.0" />
+            </LinearLayout>
+        </TableRow>
+        <TableRow android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:id="@id/divider2" android:background="?android:listDivider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_weight="1.0" />
+        </TableRow>
+        <TableRow android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="5.0">
+                    <TextView android:id="@id/textView12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <TextView android:id="@id/textView8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </TableRow>
+        <TableRow android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <Spinner android:id="@id/spin_baud" android:layout_width="150.0dip" android:layout_height="wrap_content" />
+                <Button android:id="@id/but_reset_baud" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Reset Baud" />
+                <CheckBox android:id="@id/chk_pwmrange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PWM Range 1000-2000" android:layout_weight="1.0" />
+            </LinearLayout>
+        </TableRow>
+        <TableRow android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:id="@id/divider" android:background="?android:listDivider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_weight="1.0" />
+        </TableRow>
+        <TableRow android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <Button android:id="@id/btn_updateapk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Update This App" android:layout_weight="1.0" />
+                <Button android:id="@id/btn_updateapk2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Update OTA App" android:layout_weight="1.0" />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

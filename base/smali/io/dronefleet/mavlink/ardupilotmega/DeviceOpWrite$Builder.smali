@@ -1,0 +1,318 @@
+.class public final Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite$Builder;
+.super Ljava/lang/Object;
+.source "DeviceOpWrite.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "Builder"
+.end annotation
+
+
+# instance fields
+.field private address:I
+
+.field private bank:I
+
+.field private bus:I
+
+.field private busname:Ljava/lang/String;
+
+.field private bustype:Lio/dronefleet/mavlink/util/EnumValue;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lio/dronefleet/mavlink/util/EnumValue<",
+            "Lio/dronefleet/mavlink/ardupilotmega/DeviceOpBustype;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private count:I
+
+.field private data:[B
+
+.field private regstart:I
+
+.field private requestId:J
+
+.field private targetComponent:I
+
+.field private targetSystem:I
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 289
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final address(I)Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite$Builder;
+    .locals 0
+    .annotation runtime Lio/dronefleet/mavlink/annotations/MavlinkFieldInfo;
+        description = "Bus address."
+        position = 0x6
+        unitSize = 0x1
+    .end annotation
+
+    .line 408
+    iput p1, p0, Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite$Builder;->address:I
+
+    return-object p0
+.end method
+
+.method public final bank(I)Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite$Builder;
+    .locals 0
+    .annotation runtime Lio/dronefleet/mavlink/annotations/MavlinkFieldInfo;
+        description = "Bank number."
+        extension = true
+        position = 0xc
+        unitSize = 0x1
+    .end annotation
+
+    .line 476
+    iput p1, p0, Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite$Builder;->bank:I
+
+    return-object p0
+.end method
+
+.method public final build()Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite;
+    .locals 15
+
+    .line 481
+    new-instance v14, Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite;
+
+    iget v1, p0, Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite$Builder;->targetSystem:I
+
+    iget v2, p0, Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite$Builder;->targetComponent:I
+
+    iget-wide v3, p0, Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite$Builder;->requestId:J
+
+    iget-object v5, p0, Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite$Builder;->bustype:Lio/dronefleet/mavlink/util/EnumValue;
+
+    iget v6, p0, Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite$Builder;->bus:I
+
+    iget v7, p0, Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite$Builder;->address:I
+
+    iget-object v8, p0, Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite$Builder;->busname:Ljava/lang/String;
+
+    iget v9, p0, Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite$Builder;->regstart:I
+
+    iget v10, p0, Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite$Builder;->count:I
+
+    iget-object v11, p0, Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite$Builder;->data:[B
+
+    iget v12, p0, Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite$Builder;->bank:I
+
+    const/4 v13, 0x0
+
+    move-object v0, v14
+
+    invoke-direct/range {v0 .. v13}, Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite;-><init>(IIJLio/dronefleet/mavlink/util/EnumValue;IILjava/lang/String;II[BILio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite$1;)V
+
+    return-object v14
+.end method
+
+.method public final bus(I)Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite$Builder;
+    .locals 0
+    .annotation runtime Lio/dronefleet/mavlink/annotations/MavlinkFieldInfo;
+        description = "Bus number."
+        position = 0x5
+        unitSize = 0x1
+    .end annotation
+
+    .line 395
+    iput p1, p0, Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite$Builder;->bus:I
+
+    return-object p0
+.end method
+
+.method public final busname(Ljava/lang/String;)Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite$Builder;
+    .locals 0
+    .annotation runtime Lio/dronefleet/mavlink/annotations/MavlinkFieldInfo;
+        arraySize = 0x28
+        description = "Name of device on bus (for SPI)."
+        position = 0x7
+        unitSize = 0x1
+    .end annotation
+
+    .line 422
+    iput-object p1, p0, Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite$Builder;->busname:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method public final bustype(Lio/dronefleet/mavlink/ardupilotmega/DeviceOpBustype;)Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite$Builder;
+    .locals 0
+
+    .line 369
+    invoke-static {p1}, Lio/dronefleet/mavlink/util/EnumValue;->of(Ljava/lang/Enum;)Lio/dronefleet/mavlink/util/EnumValue;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite$Builder;->bustype(Lio/dronefleet/mavlink/util/EnumValue;)Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite$Builder;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final bustype(Lio/dronefleet/mavlink/util/EnumValue;)Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite$Builder;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lio/dronefleet/mavlink/util/EnumValue<",
+            "Lio/dronefleet/mavlink/ardupilotmega/DeviceOpBustype;",
+            ">;)",
+            "Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite$Builder;"
+        }
+    .end annotation
+
+    .annotation runtime Lio/dronefleet/mavlink/annotations/MavlinkFieldInfo;
+        description = "The bus type."
+        enumType = Lio/dronefleet/mavlink/ardupilotmega/DeviceOpBustype;
+        position = 0x4
+        unitSize = 0x1
+    .end annotation
+
+    .line 361
+    iput-object p1, p0, Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite$Builder;->bustype:Lio/dronefleet/mavlink/util/EnumValue;
+
+    return-object p0
+.end method
+
+.method public final bustype(Ljava/util/Collection;)Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite$Builder;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Collection<",
+            "Ljava/lang/Enum;",
+            ">;)",
+            "Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite$Builder;"
+        }
+    .end annotation
+
+    .line 383
+    invoke-static {p1}, Lio/dronefleet/mavlink/util/EnumValue;->create(Ljava/util/Collection;)Lio/dronefleet/mavlink/util/EnumValue;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite$Builder;->bustype(Lio/dronefleet/mavlink/util/EnumValue;)Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite$Builder;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final varargs bustype([Ljava/lang/Enum;)Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite$Builder;
+    .locals 0
+
+    .line 376
+    invoke-static {p1}, Lio/dronefleet/mavlink/util/EnumValue;->create([Ljava/lang/Enum;)Lio/dronefleet/mavlink/util/EnumValue;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite$Builder;->bustype(Lio/dronefleet/mavlink/util/EnumValue;)Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite$Builder;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final count(I)Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite$Builder;
+    .locals 0
+    .annotation runtime Lio/dronefleet/mavlink/annotations/MavlinkFieldInfo;
+        description = "Count of registers to write."
+        position = 0x9
+        unitSize = 0x1
+    .end annotation
+
+    .line 448
+    iput p1, p0, Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite$Builder;->count:I
+
+    return-object p0
+.end method
+
+.method public final data([B)Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite$Builder;
+    .locals 0
+    .annotation runtime Lio/dronefleet/mavlink/annotations/MavlinkFieldInfo;
+        arraySize = 0x80
+        description = "Write data."
+        position = 0xa
+        unitSize = 0x1
+    .end annotation
+
+    .line 462
+    iput-object p1, p0, Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite$Builder;->data:[B
+
+    return-object p0
+.end method
+
+.method public final regstart(I)Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite$Builder;
+    .locals 0
+    .annotation runtime Lio/dronefleet/mavlink/annotations/MavlinkFieldInfo;
+        description = "First register to write."
+        position = 0x8
+        unitSize = 0x1
+    .end annotation
+
+    .line 435
+    iput p1, p0, Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite$Builder;->regstart:I
+
+    return-object p0
+.end method
+
+.method public final requestId(J)Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite$Builder;
+    .locals 0
+    .annotation runtime Lio/dronefleet/mavlink/annotations/MavlinkFieldInfo;
+        description = "Request ID - copied to reply."
+        position = 0x3
+        unitSize = 0x4
+    .end annotation
+
+    .line 347
+    iput-wide p1, p0, Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite$Builder;->requestId:J
+
+    return-object p0
+.end method
+
+.method public final targetComponent(I)Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite$Builder;
+    .locals 0
+    .annotation runtime Lio/dronefleet/mavlink/annotations/MavlinkFieldInfo;
+        description = "Component ID."
+        position = 0x2
+        unitSize = 0x1
+    .end annotation
+
+    .line 334
+    iput p1, p0, Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite$Builder;->targetComponent:I
+
+    return-object p0
+.end method
+
+.method public final targetSystem(I)Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite$Builder;
+    .locals 0
+    .annotation runtime Lio/dronefleet/mavlink/annotations/MavlinkFieldInfo;
+        description = "System ID."
+        position = 0x1
+        unitSize = 0x1
+    .end annotation
+
+    .line 321
+    iput p1, p0, Lio/dronefleet/mavlink/ardupilotmega/DeviceOpWrite$Builder;->targetSystem:I
+
+    return-object p0
+.end method

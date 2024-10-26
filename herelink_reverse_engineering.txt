@@ -1,0 +1,18 @@
+dumpsys package org.cubepilot.herelinksettings  
+ls /system/priv-app/HereLinkSettings  
+pm list packages
+logcat
+dumpsys activity services 
+
+What You Can Do:
+Stop the Service: If you want to stop the RadioStatService via ADB, you can use the following command:
+	adb shell am stopservice org.cubepilot.herelinksettings/.RadioStatService
+Check Service Status: To confirm whether the service is running or not after stopping it, you can re-run the dumpsys command:
+	adb shell dumpsys activity services org.cubepilot.herelinksettings
+If the service has been successfully stopped, you should not see it listed anymore under active services.
+Restart the Service: If you want to restart the service after stopping it, use this command:
+	adb shell am startservice org.cubepilot.herelinksettings/.RadioStatService
+
+
+
+cat /system/etc/mavlink-router.optimus.conf

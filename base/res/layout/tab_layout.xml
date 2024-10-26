@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.material.tabs.TabLayout android:id="@id/tabs" android:scrollbars="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" app:tabGravity="fill" app:tabMaxWidth="0.0dip" app:tabMode="fixed" />
+        <org.cubepilot.herelinksettings.HLViewPager android:id="@id/vpPager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView android:id="@id/cal_tutorial" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/calibration_tutorial" android:scaleType="fitXY" />
+</RelativeLayout>

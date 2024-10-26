@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TableLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TableRow android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <Button android:id="@id/but_getparams" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="get params" />
+                <Button android:id="@id/but_restartmodemser" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="restart modem service" />
+                <Button android:id="@id/but_br_usb0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bridge usb0" />
+                <Button android:id="@id/but_br_eth0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bridge eth0" />
+                <Button android:id="@id/but_br_wlan0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bridge wlan0" />
+                <Button android:id="@id/but_wl4addr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="wlan0 4addr" />
+            </LinearLayout>
+        </TableRow>
+        <TableRow android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <Button android:enabled="false" android:id="@id/but_savepair1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Save Pair 1" android:layout_weight="1.0" />
+                    <TextView android:id="@id/txt_pair1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="..." android:layout_weight="1.0" />
+                    <Button android:enabled="false" android:id="@id/but_loadpair1" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Load Pair 1" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <Button android:enabled="false" android:id="@id/but_savepair2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Save Pair 2" android:layout_weight="1.0" />
+                    <TextView android:id="@id/txt_pair2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="..." android:layout_weight="1.0" />
+                    <Button android:enabled="false" android:id="@id/but_loadpair2" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Load Pair 2" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </TableRow>
+        <TableRow android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <Switch android:id="@id/sw_multivideo" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Multi Video" android:layout_weight="1.0" />
+                <Switch android:id="@id/sw_hdmioff" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="keep hdmi on" android:layout_weight="1.0" />
+                <Switch android:id="@id/sw_h265" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="H265" android:layout_weight="1.0" />
+            </LinearLayout>
+        </TableRow>
+        <TableRow android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <Button android:id="@id/button_backup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Backup" />
+        </TableRow>
+        <TableRow android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:id="@id/txt_routeip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Default route IP" android:layout_weight="1.0" />
+                <EditText android:id="@id/edt_routeip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="192.168.144.1" android:ems="10" android:layout_weight="1.0" android:inputType="textPersonName" />
+                <TextView android:id="@id/txt_routeint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Interface" android:layout_weight="1.0" />
+                <EditText android:id="@id/edit_routeint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="br-vxlan" android:ems="10" android:layout_weight="1.0" android:inputType="textPersonName" />
+                <Button android:id="@id/but_saveroute" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Save Route" android:layout_weight="1.0" />
+            </LinearLayout>
+        </TableRow>
+        <TableRow android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:id="@id/textView28" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Min" android:layout_weight="1.0" />
+                <EditText android:id="@id/min_pwm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:ems="10" android:layout_weight="1.0" android:inputType="number" />
+                <TextView android:id="@id/textView30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Max" android:layout_weight="1.0" />
+                <EditText android:id="@id/max_pwm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:ems="10" android:layout_weight="1.0" android:inputType="number" />
+                <Button android:id="@id/minmax_save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Save Min/Max" android:layout_weight="1.0" />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

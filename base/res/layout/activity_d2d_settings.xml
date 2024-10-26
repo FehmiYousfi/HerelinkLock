@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:gravity="top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_medium" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout style="@style/Layout.Horizontal.PrefLine">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_pair_state" style="@style/Text.SettingsPrompt" />
+                <TextView android:id="@id/txt_cal_state" android:layout_width="347.0dip" android:layout_height="wrap_content" />
+                <Button android:id="@id/btn_request_negotiation" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="@string/btn_request_freq_negotiation" style="@android:style/Widget.Material.Button.Colored" />
+            </LinearLayout>
+            <LinearLayout style="@style/Layout.Horizontal.PrefLine">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ctrl_signal_strength" style="@style/Text.SettingsPrompt" />
+                <TextView android:id="@id/txt_controller_signal_strength" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout style="@style/Layout.Horizontal.PrefLine">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Air signal strength:" style="@style/Text.SettingsPrompt" />
+                <TextView android:id="@id/txt_air_signal_strength" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout style="@style/Layout.Horizontal.PrefLine">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/uplink_rate" style="@style/Text.SettingsPrompt" />
+                <TextView android:id="@id/txt_uplink_rate" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout style="@style/Layout.Horizontal.PrefLine">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ul_bandwidth" style="@style/Text.SettingsPrompt" />
+                <TextView android:id="@id/txt_uplink_bw" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout style="@style/Layout.Horizontal.PrefLine">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fly_distance" style="@style/Text.SettingsPrompt" />
+                <TextView android:id="@id/txt_flight_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:id="@id/textView26" android:layout_width="180.0dip" android:layout_height="wrap_content" android:text="Battery" style="@style/Text.SettingsPrompt" />
+                <TextView android:id="@id/txt_battemp" android:layout_width="179.0dip" android:layout_height="wrap_content" android:text="~" />
+                <TextView android:id="@id/textView29" android:layout_width="81.0dip" android:layout_height="wrap_content" android:text="CPU Temp" />
+                <TextView android:id="@id/txt_cputemp" android:layout_width="157.0dip" android:layout_height="wrap_content" android:text="~" />
+            </LinearLayout>
+            <LinearLayout style="@style/Layout.Horizontal.PrefLine">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/country_setting" style="@style/Text.SettingsPrompt" />
+                <Spinner android:entries="@array/country_arrays" android:id="@id/country_setting" android:layout_width="180.0dip" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout style="@style/Layout.Horizontal.PrefLine">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/video_share" style="@style/Text.SettingsPrompt" />
+                <Spinner android:entries="@array/video_share_setting" android:id="@id/video_share_setting" android:layout_width="180.0dip" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_progress" android:background="@color/shade_dark" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+        <TextView android:textSize="@dimen/textsize_medium" android:textColor="@color/white" android:gravity="center" android:id="@id/txt_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_medium" />
+    </LinearLayout>
+</RelativeLayout>

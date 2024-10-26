@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:tag="layout/button_item_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:padding="@dimen/padding_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:layout_gravity="center_vertical" android:id="@id/txt_button_name" android:tag="binding_1" android:layout_width="50.0dip" android:layout_height="wrap_content" android:textAlignment="center" />
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/delete" android:tag="binding_2" android:background="@android:drawable/ic_menu_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:weightSum="2.0" android:layout_weight="1.0" android:paddingStart="@dimen/padding_medium" android:paddingEnd="@dimen/padding_small">
+        <TextView android:layout_gravity="center" android:id="@id/txt_momentary" android:tag="binding_3" android:padding="@dimen/padding_medium" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="M" android:layout_weight="1.0" android:textAlignment="center" />
+        <TextView android:layout_gravity="center" android:id="@id/txt_toggle" android:tag="binding_4" android:padding="@dimen/padding_medium" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="T" android:layout_weight="1.0" android:textAlignment="center" />
+    </LinearLayout>
+    <View android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="@dimen/padding_small" android:paddingEnd="@dimen/padding_small">
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/txt_default_val" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.shawnlin.numberpicker.NumberPicker android:theme="@style/NumberPicker" android:layout_gravity="center_horizontal" android:id="@id/default_val" android:tag="binding_6" android:layout_width="100.0dip" android:layout_height="25.0dip" />
+        <LinearLayout android:gravity="center" android:tag="binding_7" android:layout_width="100.0dip" android:layout_height="25.0dip">
+            <CheckBox android:id="@id/default_button" android:tag="binding_8" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="@dimen/padding_small" android:paddingEnd="@dimen/padding_small">
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/txt_active_val" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/active_value" />
+        <com.shawnlin.numberpicker.NumberPicker android:theme="@style/NumberPicker" android:layout_gravity="center_horizontal" android:id="@id/active_val" android:tag="binding_9" android:layout_width="100.0dip" android:layout_height="25.0dip" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="@dimen/padding_small" android:paddingEnd="@dimen/padding_small">
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/txt_channel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Channel" />
+        <com.shawnlin.numberpicker.NumberPicker android:theme="@style/NumberPicker" android:layout_gravity="center_horizontal" android:id="@id/channel" android:tag="binding_10" android:layout_width="100.0dip" android:layout_height="25.0dip" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="@dimen/padding_small" android:paddingEnd="@dimen/padding_small">
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/txt_bus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bus" android:textAlignment="center" />
+        <com.shawnlin.numberpicker.NumberPicker android:theme="@style/NumberPicker" android:layout_gravity="center_horizontal" android:id="@id/bus" android:tag="binding_11" android:layout_width="100.0dip" android:layout_height="25.0dip" app:np_fadingEdgeEnabled="false" />
+    </LinearLayout>
+</LinearLayout>

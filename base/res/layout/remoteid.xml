@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TableLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TableRow android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <Switch android:id="@id/switch1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Enable RID" />
+        </TableRow>
+        <TableRow android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:id="@id/textView31" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="UAS ID" />
+            <EditText android:id="@id/text_uas_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="UAS ID" android:ems="10" android:inputType="textPersonName" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <Spinner android:id="@id/spin_id_type" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:spinnerMode="dropdown" />
+                <Spinner android:id="@id/spin_ua_type" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+        </TableRow>
+        <TableRow android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:id="@id/textView32" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Operator" />
+            <EditText android:id="@id/text_operator_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="Operator ID" android:ems="10" android:inputType="textPersonName" />
+            <Spinner android:id="@id/spin_operator_id_type" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </TableRow>
+        <TableRow android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:id="@id/textView33" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Flight" />
+            <EditText android:id="@id/text_self" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="Description" android:ems="10" android:inputType="textPersonName" />
+            <Spinner android:id="@id/spin_desc_type" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </TableRow>
+        <TableRow android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:id="@id/textView35" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Area" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="2" android:layout_weight="1.0">
+                <TextView android:id="@id/textView36" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Floor" />
+                <EditText android:id="@id/text_floor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="Floor" android:ems="10" android:layout_weight="1.0" android:inputType="number" />
+                <TextView android:id="@id/textView37" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ceiling" />
+                <EditText android:id="@id/text_ceiling" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="Ceiling" android:ems="10" android:layout_weight="1.0" android:inputType="number" />
+                <TextView android:id="@id/textView38" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Radius" />
+                <EditText android:id="@id/text_radius" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="Radius" android:ems="10" android:layout_weight="1.0" android:inputType="number" />
+            </LinearLayout>
+        </TableRow>
+        <TableRow android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:id="@id/textView34" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_span="3" android:text="Info" />
+        </TableRow>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

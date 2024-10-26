@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="450.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <Button android:textSize="15.0sp" android:id="@id/d2d_config_save_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="30.0dip" android:text="@string/str_save_button" />
+</LinearLayout>

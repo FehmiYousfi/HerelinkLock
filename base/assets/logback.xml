@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <appender name="logcat" class="ch.qos.logback.classic.android.LogcatAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] Aby %-5level | %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="org.eclipse.californium" level="info"/>
+
+    <root level="TRACE">
+        <appender-ref ref="logcat"/>
+        <!--<appender-ref ref="FILE"/>-->
+    </root>
+</configuration>
